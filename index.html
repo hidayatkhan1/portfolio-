@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="./Hidayat.png">
+
+</script>
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Hidayat Khan | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #111b33;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8%;
+      gap: 40px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero-content h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #22d3ee;
+      margin-bottom: 18px;
+    }
+
+    .hero-content p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #cbd5f5;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-buttons a {
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #22d3ee;
+      color: #0b1224;
+    }
+
+    .btn-primary:hover {
+      background: #38e8ff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid #22d3ee;
+      color: #22d3ee;
+    }
+
+    .btn-outline:hover {
+      background: #22d3ee;
+      color: #0f172a;
+      transform: translateY(-2px);
+    }
+
+    .hero-image img {
+      max-width: 360px;
+      width: 100%;
+      border-radius: 5%;
+      object-fit: contain;
+      filter: drop-shadow(0 20px 40px rgba(7, 210, 241, 0.33));
+      animation: fadeUp 1.2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero-content h1 { font-size: 2.4rem; }
+      .hero-buttons { justify-content: center; }
+      .hero-image img { max-width: 260px; margin-bottom: 20px; }
+    }
+
+    /* Section Styling */
+    section {
+      max-width: 100pc;
+      margin: 100px auto;
+      padding: 20px;
+    
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      border-bottom: 3px solid #22d3ee;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-left: 4px solid #22d3ee;
+      padding-left: 10px;
+    }
+
+    p { margin-bottom: 15px; }
+
+    ul { list-style: none; padding-left: 0; }
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #22d3ee;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hidayat Khan</h1>
+      <h2>Software Engineering Student | Web Developer | Creative Graphic Designer</h2>
+      <p>I design and develop modern, responsive, and high‑performance websites with a strong focus on clean code, user experience, and creative visuals.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="./Hidayat.png" alt="Hidayat Khan" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h1>About Me</h1>
+    <p>Hello! My name is <strong>Hidayat Khan</strong>, and I’m a passionate software engineer with a strong drive for creativity and problem-solving.</p>
+  </section>
+
+  <section class="intro">
+    <h2>Personal Introduction</h2>
+  I am a passionate Software Engineering student with a strong interest in building
+      modern, user-friendly, and high-performance web applications. I enjoy turning ideas
+      into real digital products through clean code and creative design.  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <p>  Currently, I am pursuing a Bachelor’s degree in Software Engineering, where I am
+      continuously improving my problem-solving skills, programming concepts, and
+      understanding of real-world software development.</p>  </section>
+
+  <section class="passion">
+    <h2>Passion</h2>
+         My core passion lies in coding, web development, and creative graphic design. I love
+      working with modern web technologies, exploring UI/UX principles, and creating
+      visually appealing interfaces that provide a smooth user experience.
+  </section>
+
+  <section class="career">
+    <h2>Career Goals & Mindset</h2>
+    <p>My career goal is to grow as a professional software engineer and web developer,
+      build impactful digital solutions, and continuously learn new technologies. I
+      believe in consistency, discipline, and self-growth, and I am always ready to take
+      on new challenges.</p>
+<!-- Skills Section -->
+<section class="skills-section" id="skills">
+  <h2 class="skills-title">My Skills</h2>
+
+  <div class="skills-grid">
+
+    <!-- Frontend -->
+    <div class="skills-card">
+      <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-html5"></i> HTML5</span>
+        <div class="bar"><div data-level="100"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <div class="bar"><div data-level="95"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-js"></i> JavaScript</span>
+        <div class="bar"><div data-level="75"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-bootstrap"></i> Tailwind / Bootstrap</span>
+        <div class="bar"><div data-level="100"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-react"></i> React (Learning)</span>
+        <div class="bar"><div data-level="60"></div></div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skills-card">
+      <h3><i class="fa-solid fa-server"></i> Backend (Basic)</h3>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-php"></i> PHP / Node.js</span>
+        <div class="bar"><div data-level="65"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-database"></i> MySQL</span>
+        <div class="bar"><div data-level="70"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-fire"></i> Firebase</span>
+        <div class="bar"><div data-level="60"></div></div>
+      </div>
+    </div>
+
+    <!-- Design -->
+    <div class="skills-card">
+      <h3><i class="fa-solid fa-pen-ruler"></i> Design</h3>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-figma"></i> Figma</span>
+        <div class="bar"><div data-level="95"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-image"></i> Photoshop</span>
+        <div class="bar"><div data-level="80"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-pen-nib"></i> Illustrator</span>
+        <div class="bar"><div data-level="70"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-palette"></i> Canva</span>
+        <div class="bar"><div data-level="100"></div></div>
+      </div>
+    </div>
+
+    <!-- Other -->
+    <div class="skills-card">
+      <h3><i class="fa-solid fa-layer-group"></i> Other</h3>
+
+      <div class="skill">
+        <span><i class="fa-brands fa-github"></i> Git & GitHub</span>
+        <div class="bar"><div data-level="80"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+        <div class="bar"><div data-level="100"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-object-group"></i> UI/UX Basics</span>
+        <div class="bar"><div data-level="75"></div></div>
+      </div>
+
+      <div class="skill">
+        <span><i class="fa-solid fa-magnifying-glass-chart"></i> SEO Fundamentals</span>
+        <div class="bar"><div data-level="65"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script>
+  
+  document.querySelectorAll('.bar div').forEach(bar => {
+    bar.style.width = bar.dataset.level + '%';
+  });
+  
+</script>
+  
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project Card -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="project.png" alt="Skill Learning Platform">
+      </div>
+
+      <div class="project-content">
+        <h3>Skill Learning Platform</h3>
+
+        <p class="project-problem">
+          <strong>Problem:</strong> Website for a Techcommunity
+        </p>
+
+        <p class="project-solution">
+          <strong>Solution:</strong> Designed and developed a modern responsive website.
+        </p>
+
+        <p class="project-tech">
+          <strong>Tech Stack:</strong> HTML, CSS, JavaScript
+        </p>
+
+        <p class="project-role">
+          <strong>Role:</strong> Design + Development
+        </p>
+
+        <div class="project-links">
+          <a href="https://techlinksolutionsllc.com/" target="https://techlinksolutionsllc.com/" class="btn-live">Live Demo</a>
+          <a href="#" target="_blank" class="btn-github">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate card for more projects -->
+    <!-- Just change image, title, content & links -->
+
+  </div>
+</section>
+<style>
+.projects-section {
+  padding: 80px 8%;
+  background: #0f182b;
+  color: #f8fafc;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 60px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  background: #020617;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.5);
+}
+
+.project-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 26px;
+}
+
+.project-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  color: #22d3ee;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
+
+.project-links {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-live {
+  background: #22d3ee;
+  color: #020617;
+}
+
+.btn-live:hover {
+  background: #38e8ff;
+}
+
+.btn-github {
+  border: 1px solid #22d3ee;
+  color: #22d3ee;
+}
+
+.btn-github:hover {
+  background: #22d3ee;
+  color: #020617;
+}
+
+</style>
+<script>
+  const cards = document.querySelectorAll('.project-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = 'translateY(40px)';
+    observer.observe(card);
+  });
+</script>
+<section class="services-section" id="services">
+  <h2 class="section-title">Services</h2>
+  <p class="section-subtitle">
+    I help individuals and businesses build strong digital presence with modern design and clean development.
+  </p>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <i class="fa-solid fa-paintbrush"></i>
+      <h3>Website Design</h3>
+      <p>
+        Modern, clean, and user-focused website designs that look professional and engaging.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Frontend Development</h3>
+      <p>
+        Responsive and high-performance frontend development using modern web technologies.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-user"></i>
+      <h3>Portfolio Websites</h3>
+      <p>
+        Personal portfolio websites for students, developers, and professionals to stand out.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-bolt"></i>
+      <h3>Landing Pages</h3>
+      <p>
+        High-converting landing pages designed for startups, products, and campaigns.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h3>Graphic Design</h3>
+      <p>
+        Creative posters, social media designs, thumbnails, and visual content.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="services-cta">
+    <h3>Have a project in mind?</h3>
+    <a href="#contact" class="cta-btn">Let’s work together</a>
+  </div>
+</section>
+<style>
+  .services-section {
+  padding: 80px 8%;
+  background: #020617;
+  color: #f8fafc;
+  text-align: center;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  font-size: 1rem;
+  color: #cbd5f5;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.service-card {
+  background: #0f172a;
+  padding: 30px 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #22d3ee;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* CTA */
+.services-cta {
+  margin-top: 40px;
+}
+
+.services-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 34px;
+  border-radius: 10px;
+  background: #22d3ee;
+  color: #020617;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #38e8ff;
+  transform: translateY(-3px);
+}
+
+</style>
+
+<section class="design-section" id="design">
+  <h2 class="section-title">Creative Graphic Design</h2>
+  <p class="section-subtitle">
+    A selection of my creative work including social media designs, posters, thumbnails, and logos.
+  </p>
+
+  <div class="masonry-grid">
+
+    <!-- Item -->
+    <div class="masonry-item">
+      <img src="./20260406_202854_0000.png" alt="Social Media Post">
+      <div class="overlay">
+        <h3>Social Media Post</h3>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="./20260409_233641_0000.png" alt="Poster Design">
+      <div class="overlay">
+        <h3>Poster Design</h3>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="./20260409_234256_0000.png" alt="Thumbnail Design">
+      <div class="overlay">
+        <h3>Thumbnail</h3>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="./Black Modern Illustrative Personal Doctor Logo_20260406_210553_0002.png" alt="Logo Design">
+      <div class="overlay">
+        <h3>Logo Design</h3>
+      </div>
+    </div>
+
+    <!-- Duplicate masonry-item for more designs -->
+
+  </div>
+</section>
+<style>
+
+  .design-section {
+  padding: 80px 8%;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  text-align: center;
+  color: #cbd5f5;
+}
+
+/* Masonry Grid */
+.masonry-grid {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.masonry-item {
+  position: relative;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.masonry-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* Hover Effect */
+.masonry-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.1)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.masonry-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 1.1rem;
+  color: #22d3ee;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
+</style>
+
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <p class="contact-text">
+    Have a project or opportunity in mind? Let’s talk.
+  </p>
+
+  <div class="contact-container">
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <a href="mailto:hk9471295@email.com">
+        <i class="fa-solid fa-envelope"></i>hk9471295@email.com
+      </a>
+
+      <a href="https://linkedin.com/in/hidayat-khan-1399792a5" target="_blank">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+
+      <a href="https://github.com/yourusername" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+
+      <a href="https://wa.me/923029471295" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+<style>
+  .contact-section {
+  padding: 80px 8%;
+  background: #020617;
+  color: #f8fafc;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #cbd5f5;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.contact-form {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: #f8fafc;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #22d3ee;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #38e8ff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.contact-info a i {
+  color: #22d3ee;
+  font-size: 1.2rem;
+}
+
+.contact-info a:hover {
+  color: #22d3ee;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</body>
+</html>
